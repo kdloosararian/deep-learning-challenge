@@ -1,5 +1,61 @@
 # deep-learning-challenge
 Module 21
+
+Neural Network Model Analysis Report:
+Overview of the Analysis:
+
+The purpose of this analysis is to create a deep learning model using a neural network to predict the success of Alphabet Soup-funded organizations based on provided features. The model aims to assist in the decision-making process for approving funding, helping Alphabet Soup make more informed choices about the organizations they support.
+
+ Data Preprocessing:
+
+Target Variable(s):
+
+  - The target variable for the model is 'IS_SUCCESSFUL', indicating whether an organization was successful in receiving funding or not.
+
+Feature Variable(s):
+
+  - The features for the model include various characteristics of the organizations, such as 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', etc.
+
+Removed Variables:
+
+  - The 'EIN' and 'NAME' columns were removed as they were identifiers and not useful for predictive modeling.
+
+Compiling, Training, and Evaluating the Model:
+
+Neurons, Layers, and Activation Functions:
+
+  - The first model architecture included 2 hidden layers with 8 hidden layer_nodes_layer1 and  5 hidden_nodes_layer2, respectively, both using the ReLU activation function. The output layer had 1 neuron with a sigmoid activation function, suitable for binary classification. 
+
+-The second model architecture included 2 hidden layers with 10 hidden layer_nodes_layer1 and 10 hidden_nodes_layer2, respectively, both using the ReLU activation function. The output layer had 1 neuron with a sigmoid activation function, suitable for binary classification.
+
+These were a random guess and reiterated on the second attempt. 
+
+Achievement of Target Model Performance:
+
+  - The model achieved a certain accuracy and loss on the training and validation datasets, indicating its performance of an accuracy of 73% for both attempts. I did not achieve 75% model accuracy target.
+
+Steps to Increase Model Performance:
+
+  - Experimentation with the number of neurons and layers.
+
+  - Adjustment of activation functions.
+
+  - Iterative training with different epochs.
+
+  - Optimization of preprocessing steps such as binning rare categories.
+
+Summary:
+
+The deep learning model demonstrated moderate success in predicting the success of Alphabet Soup-funded organizations. While the model achieved a reasonable level of accuracy, further optimization could be explored. It is recommended to continue experimenting with different architectures, activation functions, and hyperparameters to improve model performance. Additionally, incorporating more advanced techniques, such as fine-tuning or exploring different types of models (e.g., ensemble methods), could provide further insights and potentially enhance predictive capabilities. Regular evaluation and monitoring of the model's performance on new data are also crucial to ensure its continued effectiveness.
+
+This report provides an overview of the steps taken in the analysis, highlights key decisions in model development, and suggests potential avenues for future improvement.
+
+
+
+
+
+
+
 Background
 The nonprofit foundation Alphabet Soup wants a tool that can help it select the applicants for funding with the best chance of success in their ventures. With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
 
